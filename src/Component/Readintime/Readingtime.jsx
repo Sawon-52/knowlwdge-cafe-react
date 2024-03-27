@@ -9,7 +9,7 @@ const Readingtime = ({ readingtime }) => {
 };
 
 Readingtime.propTypes = {
-  readingtime: PropTypes.object.isRequired,
+  readingtime: PropTypes.number.isRequired,
 };
 
 export default Readingtime;

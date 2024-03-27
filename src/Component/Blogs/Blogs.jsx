@@ -12,8 +12,8 @@ const Blogs = ({ handleAddToBookmark, handleReadinTime }) => {
   }, []);
   return (
     <div>
-      {blogs.map((blog) => (
-        <Blog blog={blog} key={blogs.id} handleAddToBookmark={handleAddToBookmark} handleReadinTime={handleReadinTime}></Blog>
+      {blogs.map((blog, idx) => (
+        <Blog blog={blog} key={idx} handleAddToBookmark={handleAddToBookmark} handleReadinTime={handleReadinTime}></Blog>
       ))}
     </div>
   );
